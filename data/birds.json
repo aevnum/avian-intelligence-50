@@ -1,0 +1,18 @@
+{
+    "Indigo_Bunting": {
+      "genus": "Indi",
+      "locations": "Worldwide, associated with human habitats",
+      "mating_patterns": "Monogamous, breeds in colonies or solitary pairs.",
+      "short_info": "A small, adaptable bird commonly found near human settlements.",
+      "image_path": "static/bird_images/house_sparrow.jpg",
+      "audio_path": "static/bird_calls/house_sparrow.mp3"
+    },
+    "American Robin": {
+      "genus": "Turdus",
+      "locations": "North America",
+      "mating_patterns": "Monogamous for a breeding season.",
+      "short_info": "Known for its orange breast and cheerful song, often seen on lawns.",
+      "image_path": "static/bird_images/american_robin.jpg",
+      "audio_path": "static/bird_calls/american_robin.mp3"
+    }
+  }
