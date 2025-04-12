@@ -1,18 +1,402 @@
 {
-    "Indigo_Bunting": {
-      "genus": "Indi",
-      "locations": "Worldwide, associated with human habitats",
-      "mating_patterns": "Monogamous, breeds in colonies or solitary pairs.",
-      "short_info": "A small, adaptable bird commonly found near human settlements.",
-      "image_path": "static/bird_images/house_sparrow.jpg",
-      "audio_path": "static/bird_calls/house_sparrow.mp3"
+    "Black_footed_Albatross": {
+        "genus": "Phoebastria",
+        "locations": "North Pacific Ocean",
+        "mating_patterns": "Monogamous, long-term pair bonds",
+        "short_info": "Large seabird with dark brown upperparts and white underparts.  Known for its long migratory flights. Feeds on squid and fish. Listed as Near Threatened due to threats like plastic ingestion and longline fishing.  Exhibits complex courtship dances.",
+        "image_path": "static/bird_images/Black_footed_Albatross.jpg",
+        "audio_path": "static/bird_calls/Black_footed_Albatross.mp3"
     },
-    "American Robin": {
-      "genus": "Turdus",
-      "locations": "North America",
-      "mating_patterns": "Monogamous for a breeding season.",
-      "short_info": "Known for its orange breast and cheerful song, often seen on lawns.",
-      "image_path": "static/bird_images/american_robin.jpg",
-      "audio_path": "static/bird_calls/american_robin.mp3"
+    "Laysan_Albatross": {
+        "genus": "Phoebastria",
+        "locations": "North Pacific Ocean",
+        "mating_patterns": "Monogamous, long-term pair bonds",
+        "short_info": "Medium-sized albatross with white body and dark gray wings. Nests primarily in the Northwestern Hawaiian Islands.  Known for its graceful flight and elaborate courtship rituals. Faces threats from plastic pollution and sea-level rise.  One of the oldest living birds.",
+        "image_path": "static/bird_images/Laysan_Albatross.jpg",
+        "audio_path": "static/bird_calls/Laysan_Albatross.mp3"
+    },
+    "Groove_billed_Ani": {
+        "genus": "Crotophaga",
+        "locations": "Southern Texas, Mexico, Central America, South America",
+        "mating_patterns": "Communal breeding",
+        "short_info": "Black bird with a large, curved bill with grooves.  Highly social birds, living in groups.  They share nests and raise young communally.  Makes a variety of clucking and cooing sounds.  Found in open areas with shrubs and trees.",
+        "image_path": "static/bird_images/Groove_billed_Ani.jpg",
+        "audio_path": "static/bird_calls/Groove_billed_Ani.mp3"
+    },
+    "Red_winged_Blackbird": {
+        "genus": "Agelaius",
+        "locations": "North and Central America",
+        "mating_patterns": "Polygynous",
+        "short_info": "Common blackbird with red shoulder patches (males).  Females are brown and streaky.  Inhabits marshes, fields, and meadows. Known for its loud, musical song.  Often seen in large flocks.",
+        "image_path": "static/bird_images/Red_winged_Blackbird.jpg",
+        "audio_path": "static/bird_calls/Red_winged_Blackbird.mp3"
+    },
+    "Rusty_Blackbird": {
+        "genus": "Euphagus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Dark blackbird with rusty-tinged feathers (especially in winter). Declining populations. Breeds in boreal forests and winters in wetlands. Has a distinctive squeaky song.  Threatened by habitat loss.",
+        "image_path": "static/bird_images/Rusty_Blackbird.jpg",
+        "audio_path": "static/bird_calls/Rusty_Blackbird.mp3"
+    },
+    "Bobolink": {
+        "genus": "Dolichonyx",
+        "locations": "North America",
+        "mating_patterns": "Polygynous",
+        "short_info": "Small blackbird with a bubbly song. Males have black and white plumage in breeding season. Long-distance migrant. Inhabits grasslands and meadows. Declining due to habitat loss.",
+        "image_path": "static/bird_images/Bobolink.jpg",
+        "audio_path": "static/bird_calls/Bobolink.mp3"
+    },
+    "Indigo_Bunting": {
+        "genus": "Passerina",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small, vibrant blue songbird (males).  Females are brown.  Found in brushy areas and forest edges.  Known for its sweet, warbling song.  Migrates to Central America for the winter.",
+        "image_path": "static/bird_images/Indigo_Bunting.jpg",
+        "audio_path": "static/bird_calls/Indigo_Bunting.mp3"
+    },
+    "Eastern_Towhee": {
+        "genus": "Pipilo",
+        "locations": "Eastern North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large sparrow with black upperparts and reddish-brown sides.  Females are brown.  Inhabits forests and thickets.  Known for its call that sounds like 'drink-your-tea'.  Scratches at the leaf litter for food.",
+        "image_path": "static/bird_images/Eastern_Towhee.jpg",
+        "audio_path": "static/bird_calls/Eastern_Towhee.mp3"
+    },
+    "Pelagic_Cormorant": {
+        "genus": "Phalacrocorax",
+        "locations": "Pacific Coast of North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small, slender cormorant with glossy black plumage.  Breeds on rocky cliffs and islands.  Dives for fish in coastal waters.  Has a distinctive greenish sheen in breeding season. Often seen in small colonies.",
+        "image_path": "static/bird_images/Pelagic_Cormorant.jpg",
+        "audio_path": "static/bird_calls/Pelagic_Cormorant.mp3"
+    },
+    "Bronzed_Cowbird": {
+        "genus": "Molothrus",
+        "locations": "Southwestern U.S., Mexico, Central America",
+        "mating_patterns": "Brood parasite",
+        "short_info": "Blackbird with a bronzy sheen to its feathers.  Known for its red eye.  Lays its eggs in the nests of other birds.  Hosts raise the cowbird young.  Found in open woodlands and cultivated areas.",
+        "image_path": "static/bird_images/Bronzed_Cowbird.jpg",
+        "audio_path": "static/bird_calls/Bronzed_Cowbird.mp3"
+    },
+    "Shiny_Cowbird": {
+        "genus": "Molothrus",
+        "locations": "South America, Caribbean, Southern Florida",
+        "mating_patterns": "Brood parasite",
+        "short_info": "Glossy blackbird with a slender bill.  Similar to Bronzed Cowbird but smaller.  Lays eggs in the nests of other birds.  Expanding its range in North America.  Found in a variety of open habitats.",
+        "image_path": "static/bird_images/Shiny_Cowbird.jpg",
+        "audio_path": "static/bird_calls/Shiny_Cowbird.mp3"
+    },
+    "American_Crow": {
+        "genus": "Corvus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large, black bird with a loud 'caw' sound.  Highly intelligent and adaptable.  Lives in a variety of habitats.  Often seen in flocks.  Known for its problem-solving abilities.",
+        "image_path": "static/bird_images/American_Crow.jpg",
+        "audio_path": "static/bird_calls/American_Crow.mp3"
+    },
+    "Fish_Crow": {
+        "genus": "Corvus",
+        "locations": "Southeastern United States",
+        "mating_patterns": "Monogamous",
+        "short_info": "Similar to American Crow, but smaller.  Has a more nasal 'caw' sound.  Found in coastal areas and near bodies of water.  Eats fish and other aquatic creatures.  Social bird, often seen in groups.",
+        "image_path": "static/bird_images/Fish_Crow.jpg",
+        "audio_path": "static/bird_calls/Fish_Crow.mp3"
+    },
+    "Black_billed_Cuckoo": {
+        "genus": "Coccyzus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Slender brown cuckoo with a long tail.  Has a black bill.  Eats mainly caterpillars.  Found in deciduous forests and thickets.  Often hard to see, but its 'ku-ku-ku' call is distinctive.",
+        "image_path": "static/bird_images/Black_billed_Cuckoo.jpg",
+        "audio_path": "static/bird_calls/Black_billed_Cuckoo.mp3"
+    },
+    "Purple_Finch": {
+        "genus": "Haemorhous",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small, stocky finch with a rosy-red head and breast (males).  Females are brown and streaky.  Found in coniferous forests.  Has a sweet, warbling song.  Often visits bird feeders.",
+        "image_path": "static/bird_images/Purple_Finch.jpg",
+        "audio_path": "static/bird_calls/Purple_Finch.mp3"
+    },
+    "Northern_Flicker": {
+        "genus": "Colaptes",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large woodpecker with brown and black plumage.  Has a black 'moustache' (males).  Often seen on the ground, eating ants.  Has a loud, ringing call.  Found in a variety of habitats.",
+        "image_path": "static/bird_images/Northern_Flicker.jpg",
+        "audio_path": "static/bird_calls/Northern_Flicker.mp3"
+    },
+    "Great_Crested_Flycatcher": {
+        "genus": "Myiarchus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large flycatcher with olive-brown upperparts and yellow underparts.  Has a prominent crest.  Nests in tree cavities.  Known for its loud 'wheep' call.  Catches insects in flight.",
+        "image_path": "static/bird_images/Great_Crested_Flycatcher.jpg",
+        "audio_path": "static/bird_calls/Great_Crested_Flycatcher.mp3"
+    },
+    "Olive_sided_Flycatcher": {
+        "genus": "Contopus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized flycatcher with dark vest.  Perches on high branches.  Has a distinctive 'pip-pip-pip' call.  Declining population.  Breeds in coniferous forests.",
+        "image_path": "static/bird_images/Olive_sided_Flycatcher.jpg",
+        "audio_path": "static/bird_calls/Olive_sided_Flycatcher.mp3"
+    },
+    "Scissor_tailed_Flycatcher": {
+        "genus": "Tyrannus",
+        "locations": "Southern United States, Mexico",
+        "mating_patterns": "Monogamous",
+        "short_info": "Elegant flycatcher with a very long, forked tail.  Black and white plumage with pinkish sides.  Performs aerial displays.  Found in open grasslands and savannas.  Eats insects.",
+        "image_path": "static/bird_images/Scissor_tailed_Flycatcher.jpg",
+        "audio_path": "static/bird_calls/Scissor_tailed_Flycatcher.mp3"
+    },
+    "Vermilion_Flycatcher": {
+        "genus": "Pyrocephalus",
+        "locations": "Southwestern United States, Mexico, Central America, South America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small flycatcher. Males are bright red; females are brown. Found in arid and semi-arid areas. Perches conspicuously. Eats insects. Has a buzzy call.",
+        "image_path": "static/bird_images/Vermilion_Flycatcher.jpg",
+        "audio_path": "static/bird_calls/Vermilion_Flycatcher.mp3"
+    },
+    "Yellow_bellied_Flycatcher": {
+        "genus": "Empidonax",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small flycatcher with olive-green upperparts and yellowish underparts.  Difficult to distinguish from other Empidonax flycatchers.  Breeds in coniferous forests.  Has a soft 'tu-weep' call.  Eats small insects.",
+        "image_path": "static/bird_images/Yellow_bellied_Flycatcher.jpg",
+        "audio_path": "static/bird_calls/Yellow_bellied_Flycatcher.mp3"
+    },
+    "Frigatebird": {
+        "genus": "Fregata",
+        "locations": "Tropical and subtropical oceans",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large seabird with long, angular wings.  Males have a red throat pouch.  Known for its aerial agility.  Often steals food from other birds.  Found in tropical and subtropical regions.",
+        "image_path": "static/bird_images/Frigatebird.jpg",
+        "audio_path": "static/bird_calls/Frigatebird.mp3"
+    },
+    "Northern_Fulmar": {
+        "genus": "Fulmarus",
+        "locations": "North Atlantic and North Pacific Oceans",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized seabird with gray and white plumage.  Tube-nosed bird.  Breeds on cliffs.  Known for its strong flight.  Eats fish and squid.  Can spit oil as defense.",
+        "image_path": "static/bird_images/Northern_Fulmar.jpg",
+        "audio_path": "static/bird_calls/Northern_Fulmar.mp3"
+    },
+    "Gadwall": {
+        "genus": "Mareca",
+        "locations": "North America, Europe, Asia",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized duck with gray-brown plumage.  Male has a black rump.  Found in wetlands.  Less vocal than other ducks.  Eats aquatic plants.  Widespread distribution.",
+        "image_path": "static/bird_images/Gadwall.jpg",
+        "audio_path": "static/bird_calls/Gadwall.mp3"
+    },
+    "American_Goldfinch": {
+        "genus": "Spinus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small finch. Male is bright yellow in breeding season; female is duller yellow.  Eats seeds, especially thistle.  Has a cheerful, twittering song.  Often seen at bird feeders.  Nests late in the summer.",
+        "image_path": "static/bird_images/American_Goldfinch.jpg",
+        "audio_path": "static/bird_calls/American_Goldfinch.mp3"
+    },
+    "European_Goldfinch": {
+        "genus": "Carduelis",
+        "locations": "Europe, Asia, North Africa",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small finch with a red face, black and white head, and yellow wing bar.  Eats seeds.  Has a melodious song.  Found in gardens and open woodlands.  Introduced to other parts of the world.",
+        "image_path": "static/bird_images/European_Goldfinch.jpg",
+        "audio_path": "static/bird_calls/European_Goldfinch.mp3"
+    },
+    "Boat_tailed_Grackle": {
+        "genus": "Quiscalus",
+        "locations": "Southeastern United States",
+        "mating_patterns": "Polygynous",
+        "short_info": "Large blackbird with a long, keel-shaped tail.  Males are glossy black; females are brown.  Found in coastal areas and wetlands.  Has a variety of calls.  Often seen in flocks.",
+        "image_path": "static/bird_images/Boat_tailed_Grackle.jpg",
+        "audio_path": "static/bird_calls/Boat_tailed_Grackle.mp3"
+    },
+    "Eared_Grebe": {
+        "genus": "Podiceps",
+        "locations": "North America, Eurasia, Africa",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small grebe with a black head and neck in breeding season. Has golden ear tufts. Found in wetlands. Swims and dives for food. Has a high-pitched call. Forms colonies during breeding.",
+        "image_path": "static/bird_images/Eared_Grebe.jpg",
+        "audio_path": "static/bird_calls/Eared_Grebe.mp3"
+    },
+    "Horned_Grebe": {
+        "genus": "Podiceps",
+        "locations": "North America, Eurasia",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small grebe with black head and golden 'horns' in breeding season. Found in lakes and ponds. Dives for fish and insects. Has an elaborate courtship display. Breeds in freshwater wetlands.",
+        "image_path": "static/bird_images/Horned_Grebe.jpg",
+        "audio_path": "static/bird_calls/Horned_Grebe.mp3"
+    },
+    "Pied_billed_Grebe": {
+        "genus": "Podilymbus",
+        "locations": "North America, Central America, South America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small, stocky grebe with a short, thick bill.  Has a black band on its bill in breeding season.  Found in wetlands.  Dives for fish and invertebrates.  Has a distinctive 'cow-cow-cow' call.",
+        "image_path": "static/bird_images/Pied_billed_Grebe.jpg",
+        "audio_path": "static/bird_calls/Pied_billed_Grebe.mp3"
+    },
+    "Western_Grebe": {
+        "genus": "Aechmophorus",
+        "locations": "Western North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large grebe with a long, slender neck.  Black and white plumage.  Found in lakes and wetlands.  Known for its elaborate courtship displays, including 'rushing'.  Dives for fish.",
+        "image_path": "static/bird_images/Western_Grebe.jpg",
+        "audio_path": "static/bird_calls/Western_Grebe.mp3"
+    },
+    "Blue_Grosbeak": {
+        "genus": "Passerina",
+        "locations": "Southern United States, Mexico, Central America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large, deep blue songbird (males).  Females are brown.  Has a large, conical bill.  Found in brushy areas and forest edges.  Has a rich, warbling song.  Eats seeds and insects.",
+        "image_path": "static/bird_images/Blue_Grosbeak.jpg",
+        "audio_path": "static/bird_calls/Blue_Grosbeak.mp3"
+    },
+    "Evening_Grosbeak": {
+        "genus": "Coccothraustes",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large finch with a heavy, yellow bill.  Males are yellow and black; females are gray and black.  Found in coniferous forests.  Has a loud, ringing call.  Eats seeds, especially boxelder.",
+        "image_path": "static/bird_images/Evening_Grosbeak.jpg",
+        "audio_path": "static/bird_calls/Evening_Grosbeak.mp3"
+    },
+    "Pine_Grosbeak": {
+        "genus": "Pinicola",
+        "locations": "North America, Eurasia",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large finch with a thick bill.  Males are rosy-red; females are gray-yellow.  Found in coniferous forests.  Has a mellow, warbling song.  Eats buds, berries, and seeds.  Irruptive migrant.",
+        "image_path": "static/bird_images/Pine_Grosbeak.jpg",
+        "audio_path": "static/bird_calls/Pine_Grosbeak.mp3"
+    },
+    "Rose_breasted_Grosbeak": {
+        "genus": "Pheucticus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large songbird with a large, triangular bill.  Males have a black head and back, and a rose-red breast.  Females are brown and streaky.  Found in deciduous forests.  Has a rich, robin-like song.",
+        "image_path": "static/bird_images/Rose_breasted_Grosbeak.jpg",
+        "audio_path": "static/bird_calls/Rose_breasted_Grosbeak.mp3"
+    },
+    "California_Gull": {
+        "genus": "Larus",
+        "locations": "Western North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized gull with gray upperparts and white underparts.  Has a yellow bill with a red spot.  Breeds inland, often near lakes.  Found in a variety of habitats.  Opportunistic feeder.",
+        "image_path": "static/bird_images/California_Gull.jpg",
+        "audio_path": "static/bird_calls/California_Gull.mp3"
+    },
+    "Heermann_Gull": {
+        "genus": "Larus",
+        "locations": "Pacific Coast of North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized gull with gray body and dark gray wings.  Red bill.  Breeds mainly on islands off the coast of Mexico.  Migrates north after breeding.  Often steals fish from other birds.",
+        "image_path": "static/bird_images/Heermann_Gull.jpg",
+        "audio_path": "static/bird_calls/Heermann_Gull.mp3"
+    },
+    "Herring_Gull": {
+        "genus": "Larus",
+        "locations": "North America, Europe, Asia",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large gull with gray upperparts and white underparts.  Yellow bill with a red spot.  Very common and widespread.  Opportunistic feeder.  Found in coastal areas and inland.",
+        "image_path": "static/bird_images/Herring_Gull.jpg",
+        "audio_path": "static/bird_calls/Herring_Gull.mp3"
+    },
+    "Ivory_Gull": {
+        "genus": "Pagophila",
+        "locations": "Arctic regions",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized gull.  Almost entirely white plumage.  Black legs.  Found in Arctic regions.  Breeds on cliffs and ice.  Scavenger and predator.  Vulnerable species.",
+        "image_path": "static/bird_images/Ivory_Gull.jpg",
+        "audio_path": "static/bird_calls/Ivory_Gull.mp3"
+    },
+    "Ring_billed_Gull": {
+        "genus": "Larus",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized gull with gray upperparts and white underparts.  Yellow bill with a black ring.  Very common and widespread.  Found in a variety of habitats.  Opportunistic feeder.",
+        "image_path": "static/bird_images/Ring_billed_Gull.jpg",
+        "audio_path": "static/bird_calls/Ring_billed_Gull.mp3"
+    },
+    "Western_Gull": {
+        "genus": "Larus",
+        "locations": "Pacific Coast of North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large gull with dark gray upperparts and white underparts.  Large yellow bill.  Found along the Pacific Coast.  Aggressive and opportunistic feeder.  Breeds in colonies on islands and cliffs.",
+        "image_path": "static/bird_images/Western_Gull.jpg",
+        "audio_path": "static/bird_calls/Western_Gull.mp3"
+    },
+    "Anna_Hummingbird": {
+        "genus": "Calypte",
+        "locations": "Western North America",
+        "mating_patterns": "Polygynous",
+        "short_info": "Small hummingbird with a metallic green back.  Males have a bright pink head and throat.  Found in gardens and woodlands.  Known for its elaborate courtship displays.  Non-migratory.",
+        "image_path": "static/bird_images/Anna_Hummingbird.jpg",
+        "audio_path": "static/bird_calls/Anna_Hummingbird.mp3"
+    },
+    "Ruby_throated_Hummingbird": {
+        "genus": "Archilochus",
+        "locations": "Eastern North America",
+        "mating_patterns": "Polygynous",
+        "short_info": "Small hummingbird with a metallic green back.  Males have a bright red throat.  Migrates to Central America for the winter.  Found in gardens and forests.  Hovering flight.",
+        "image_path": "static/bird_images/Ruby_throated_Hummingbird.jpg",
+        "audio_path": "static/bird_calls/Ruby_throated_Hummingbird.mp3"
+    },
+    "Rufous_Hummingbird": {
+        "genus": "Selasphorus",
+        "locations": "Western North America",
+        "mating_patterns": "Polygynous",
+        "short_info": "Small hummingbird with a rusty-red back and belly (males).  Long-distance migrant.  Found in mountain meadows and forests.  Known for its aggressive behavior.  Hovering flight.",
+        "image_path": "static/bird_images/Rufous_Hummingbird.jpg",
+        "audio_path": "static/bird_calls/Rufous_Hummingbird.mp3"
+    },
+    "Green_Violetear": {
+        "genus": "Colibri",
+        "locations": "Mexico, Central America, South America",
+        "mating_patterns": "Polygynous",
+        "short_info": "Medium-sized hummingbird with a metallic green body.  Has a violet ear patch.  Found in forests and gardens.  Fast and agile flight.  Eats nectar and insects.  Has a buzzy call.",
+        "image_path": "static/bird_images/Green_Violetear.jpg",
+        "audio_path": "static/bird_calls/Green_Violetear.mp3"
+    },
+    "Long_tailed_Jaeger": {
+        "genus": "Stercorarius",
+        "locations": "Arctic regions",
+        "mating_patterns": "Monogamous",
+        "short_info": "Medium-sized seabird with long, pointed wings.  Has long central tail feathers.  Breeds in the Arctic.  Migrates south for the winter.  Predator and kleptoparasite.  Agile flyer.",
+        "image_path": "static/bird_images/Long_tailed_Jaeger.jpg",
+        "audio_path": "static/bird_calls/Long_tailed_Jaeger.mp3"
+    },
+    "Pomarine_Jaeger": {
+        "genus": "Stercorarius",
+        "locations": "Arctic regions",
+        "mating_patterns": "Monogamous",
+        "short_info": "Large seabird with blunt central tail feathers (adults).  Breeds in the Arctic.  Migrates south for the winter.  Predator and kleptoparasite.  Strong flyer.  Variable plumage.",
+        "image_path": "static/bird_images/Pomarine_Jaeger.jpg",
+        "audio_path": "static/bird_calls/Pomarine_Jaeger.mp3"
+    },
+    "Blue_Jay": {
+        "genus": "Cyanocitta",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Bright blue bird with a crest.  Intelligent and noisy.  Found in forests and gardens.  Mimics other birds.  Eats nuts, seeds, and insects.  Bold and conspicuous.",
+        "image_path": "static/bird_images/Blue_Jay.jpg",
+        "audio_path": "static/bird_calls/Blue_Jay.mp3"
+    },
+    "Florida_Jay": {
+        "genus": "Aphelocoma",
+        "locations": "Florida, USA",
+        "mating_patterns": "Cooperative breeding",
+        "short_info": "Medium-sized jay with blue head, back, and tail.  No crest.  Found only in Florida.  Lives in scrub habitat.  Helps raise young communally.  Endangered species.  Social bird.",
+        "image_path": "static/bird_images/Florida_Jay.jpg",
+        "audio_path": "static/bird_calls/Florida_Jay.mp3"
+    },
+    "Dark_eyed_Junco": {
+        "genus": "Junco",
+        "locations": "North America",
+        "mating_patterns": "Monogamous",
+        "short_info": "Small, gray sparrow with a white belly.  Many subspecies with varying plumage.  Found in forests and fields.  Has a trilling song.  Often seen at bird feeders.  Ground-feeding bird.",
+        "image_path": "static/bird_images/Dark_eyed_Junco.jpg",
+        "audio_path": "static/bird_calls/Dark_eyed_Junco.mp3"
     }
-  }
+}
