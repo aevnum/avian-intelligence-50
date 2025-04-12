@@ -1,2 +1,4 @@
 # Ignore model files .pt
 *.pt
+*.env
+*.txt

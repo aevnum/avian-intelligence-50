@@ -117,9 +117,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Handle Clicking a Bird Button ---
     async function handleBirdButtonClick(event) {
         const birdName = event.target.dataset.birdName;
-        currentBirdForChat = birdName; // Set context for potential chat
-        clearState(true); // Clear previous results but keep detections visible
-
+    
+        // **** ADD LOGS HERE ****
+        console.log(`Detection button clicked for: ${birdName}`); // Log 1: Check if handler runs and gets name
+        // **** END LOGS ****
+    
+        currentBirdForChat = birdName; // This is the critical line
+    
+        // **** ADD LOGS HERE ****
+        console.log(`currentBirdForChat variable has been set to: ${currentBirdForChat}`); // Log 2: Check if assignment happens
+        // **** END LOGS ****
+    
+        // clearState(true); // Clear previous results but keep detections visible
+    
         // Highlight the selected button (optional)
         document.querySelectorAll('#detection-buttons .button').forEach(btn => btn.classList.remove('active'));
         event.target.classList.add('active'); // You'll need CSS for '.active'
@@ -163,23 +173,32 @@ document.addEventListener('DOMContentLoaded', () => {
             birdInfoArea.style.display = 'block'; // Show the info card
 
         } catch (error) {
-            console.error('Error fetching bird info:', error);
+            // **** ADD LOGS HERE ****
+            console.error(`Error inside handleBirdButtonClick for ${birdName}:`, error); // Log 3: Check for errors within this function
+            // **** END LOGS ****
             displayError(`Error fetching info for ${birdName}: ${error.message}`);
             birdInfoArea.style.display = 'none';
         }
-    }
+   }
 
      // --- Handle Clicking "Chat about [Bird]" Button ---
      chatButton.addEventListener('click', () => {
+        // **** ADD LOGS HERE ****
+        console.log("Chat button clicked!"); // Check if listener fires
+        console.log("Value of currentBirdForChat:", currentBirdForChat); // Check the variable
+    
         if (currentBirdForChat) {
+            console.log("Condition met, attempting to show chat interface."); // Check if it enters the 'if' block
             chatInterfaceBirdNameSpan.textContent = currentBirdForChat;
             chatHistory.innerHTML = ''; // Clear previous chat history visually
             currentChatHistory = []; // Clear internal history
             chatInput.value = ''; // Clear input field
             chatInterface.style.display = 'block'; // Show chat card
-            // Add a starting message from the AI
             addChatMessage('assistant', `Hi! Ask me anything more about the ${currentBirdForChat}.`);
             chatInput.focus(); // Focus the input field
+        } else {
+             // **** ADD LOG HERE ****
+            console.warn("Chat button clicked, but 'currentBirdForChat' is null or empty. Cannot open chat.");
         }
     });
 
