@@ -29,7 +29,7 @@ COPY . .
 
 # Expose the port the app runs on (Gunicorn will use $PORT env var)
 # Fly.io typically expects 8080 if not specified otherwise in fly.toml
-EXPOSE 8080
+EXPOSE 7860
 
 # Command to run the application using Gunicorn
 # Listens on 0.0.0.0 and uses the PORT environment variable provided by Fly.io
