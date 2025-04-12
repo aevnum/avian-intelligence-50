@@ -39,28 +39,56 @@ if not bird_data:
     logging.warning("Bird data is empty. Features relying on it might not work.")
 
 # --- Load YOLOv8 Model ---
+# --- Download and Load YOLOv8 Model ---
+model = None # Initialize as None
 try:
-    model = YOLO('model/best.pt')
-    logging.info("YOLOv8 model loaded successfully.")
+    # Define Hugging Face repo details - CHANGE THESE
+    HF_REPO_ID = "aevnum/avian-intelligence-yolo" # <<<--- YOUR HF REPO ID
+    HF_FILENAME = "best.pt"
+    MODEL_CACHE_DIR = "model_cache" # Can be any directory name
+
+    # Ensure the local model cache directory exists
+    os.makedirs(MODEL_CACHE_DIR, exist_ok=True)
+
+    logging.info(f"Downloading model {HF_FILENAME} from {HF_REPO_ID}...")
+    # Use HF Token from environment variable for download
+    hf_token = os.environ.get('HUGGING_FACE_HUB_TOKEN')
+    if not hf_token:
+         logging.warning("HUGGING_FACE_HUB_TOKEN not set. Download might fail for private repos or hit rate limits.")
+
+    downloaded_model_path = hf_hub_download(
+        repo_id=HF_REPO_ID,
+        filename=HF_FILENAME,
+        cache_dir=MODEL_CACHE_DIR,
+        force_filename=HF_FILENAME, # Helps ensure consistent naming if cache is used
+        token=hf_token
+    )
+    logging.info(f"Model downloaded to: {downloaded_model_path}")
+
+    # Load the downloaded model
+    model = YOLO(downloaded_model_path)
+    logging.info("YOLOv8 model loaded successfully from downloaded file.")
+
 except Exception as e:
-    logging.error(f"Error loading YOLOv8 model: {e}")
+    logging.exception("Error downloading or loading YOLOv8 model from Hugging Face Hub") # Log full traceback
     model = None
 
 # --- Configure Gemini API ---
+model_gemini = None # Initialize as None
 try:
-    with open('apifree.txt', 'r') as f:
-        gemini_api_key = f.read().strip()
-    logging.info("Gemini API key loaded from file.")
-    genai.configure(api_key=gemini_api_key)
-    model_gemini = genai.GenerativeModel("gemini-2.0-flash")  # Initialize Gemini 2.0 Flash model
-    logging.info("Gemini client configured.")
-
-except FileNotFoundError:
-    logging.warning("gemini_api_key.txt not found. Chat feature will be disabled.")
-    model_gemini = None
+    gemini_api_key = os.environ.get('GEMINI_API_KEY') # Get key from environment
+    if not gemini_api_key:
+        logging.warning("GEMINI_API_KEY environment variable not set. Chat feature will be disabled.")
+    else:
+        logging.info("Configuring Gemini API...")
+        genai.configure(api_key=gemini_api_key)
+        # Consider making model name configurable too via env var if needed
+        # GEMINI_MODEL = os.environ.get('GEMINI_MODEL_NAME', 'gemini-1.5-flash-latest')
+        model_gemini = genai.GenerativeModel('gemini-1.5-flash-latest') # Or use variable
+        logging.info(f"Gemini client configured with model.")
 
 except Exception as e:
-    logging.error(f"Failed to initialize Gemini client: {e}")
+    logging.exception("Failed to initialize Gemini client") # Log full traceback
     model_gemini = None
 
 # --- Helper Functions ---
@@ -231,4 +259,7 @@ def handle_chat():
 
 # --- Main Execution ---
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    # Use host='0.0.0.0' to be accessible within the container
+    # Port is usually set by the deployment platform via PORT env var
+    port = int(os.environ.get('PORT', 5000)) # Default to 5000 if PORT not set
+    app.run(host='0.0.0.0', port=port)
