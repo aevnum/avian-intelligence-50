@@ -7,6 +7,7 @@ from werkzeug.utils import secure_filename
 from ultralytics import YOLO
 import google.generativeai as genai  # Import Gemini API
 import cv2
+from huggingface_hub import hf_hub_download
 
 # --- Basic Setup & Configuration ---
 logging.basicConfig(level=logging.INFO)
