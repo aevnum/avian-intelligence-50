@@ -13,7 +13,7 @@
         "mating_patterns": "Monogamous, long-term pair bonds",
         "short_info": "Medium-sized albatross with white body and dark gray wings. Nests primarily in the Northwestern Hawaiian Islands.  Known for its graceful flight and elaborate courtship rituals. Faces threats from plastic pollution and sea-level rise.  One of the oldest living birds.",
         "image_path": "static/bird_images/Laysan_Albatross.jpg",
-        "audio_path": "static/bird_calls/Laysan_Albatross.mp3"
+        "audio_path": "static/bird_calls/Laysan_Albatross.wav"
     },
     "Groove_billed_Ani": {
         "genus": "Crotophaga",
@@ -29,7 +29,7 @@
         "mating_patterns": "Polygynous",
         "short_info": "Common blackbird with red shoulder patches (males).  Females are brown and streaky.  Inhabits marshes, fields, and meadows. Known for its loud, musical song.  Often seen in large flocks.",
         "image_path": "static/bird_images/Red_winged_Blackbird.jpg",
-        "audio_path": "static/bird_calls/Red_winged_Blackbird.mp3"
+        "audio_path": "static/bird_calls/Red_winged_Blackbird.wav"
     },
     "Rusty_Blackbird": {
         "genus": "Euphagus",
@@ -37,7 +37,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Dark blackbird with rusty-tinged feathers (especially in winter). Declining populations. Breeds in boreal forests and winters in wetlands. Has a distinctive squeaky song.  Threatened by habitat loss.",
         "image_path": "static/bird_images/Rusty_Blackbird.jpg",
-        "audio_path": "static/bird_calls/Rusty_Blackbird.mp3"
+        "audio_path": "static/bird_calls/Rusty_Blackbird.wav"
     },
     "Bobolink": {
         "genus": "Dolichonyx",
@@ -45,7 +45,7 @@
         "mating_patterns": "Polygynous",
         "short_info": "Small blackbird with a bubbly song. Males have black and white plumage in breeding season. Long-distance migrant. Inhabits grasslands and meadows. Declining due to habitat loss.",
         "image_path": "static/bird_images/Bobolink.jpg",
-        "audio_path": "static/bird_calls/Bobolink.mp3"
+        "audio_path": "static/bird_calls/Bobolink.wav"
     },
     "Indigo_Bunting": {
         "genus": "Passerina",
@@ -53,7 +53,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Small, vibrant blue songbird (males).  Females are brown.  Found in brushy areas and forest edges.  Known for its sweet, warbling song.  Migrates to Central America for the winter.",
         "image_path": "static/bird_images/Indigo_Bunting.jpg",
-        "audio_path": "static/bird_calls/Indigo_Bunting.mp3"
+        "audio_path": "static/bird_calls/Indigo_Bunting.wav"
     },
     "Eastern_Towhee": {
         "genus": "Pipilo",
@@ -61,7 +61,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Large sparrow with black upperparts and reddish-brown sides.  Females are brown.  Inhabits forests and thickets.  Known for its call that sounds like 'drink-your-tea'.  Scratches at the leaf litter for food.",
         "image_path": "static/bird_images/Eastern_Towhee.jpg",
-        "audio_path": "static/bird_calls/Eastern_Towhee.mp3"
+        "audio_path": "static/bird_calls/Eastern_Towhee.wav"
     },
     "Pelagic_Cormorant": {
         "genus": "Phalacrocorax",
@@ -125,7 +125,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Large woodpecker with brown and black plumage.  Has a black 'moustache' (males).  Often seen on the ground, eating ants.  Has a loud, ringing call.  Found in a variety of habitats.",
         "image_path": "static/bird_images/Northern_Flicker.jpg",
-        "audio_path": "static/bird_calls/Northern_Flicker.mp3"
+        "audio_path": "static/bird_calls/Northern_Flicker.wav"
     },
     "Great_Crested_Flycatcher": {
         "genus": "Myiarchus",
@@ -165,7 +165,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Small flycatcher with olive-green upperparts and yellowish underparts.  Difficult to distinguish from other Empidonax flycatchers.  Breeds in coniferous forests.  Has a soft 'tu-weep' call.  Eats small insects.",
         "image_path": "static/bird_images/Yellow_bellied_Flycatcher.jpg",
-        "audio_path": "static/bird_calls/Yellow_bellied_Flycatcher.mp3"
+        "audio_path": "static/bird_calls/Yellow_bellied_Flycatcher.wav"
     },
     "Frigatebird": {
         "genus": "Fregata",
@@ -181,7 +181,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Medium-sized seabird with gray and white plumage.  Tube-nosed bird.  Breeds on cliffs.  Known for its strong flight.  Eats fish and squid.  Can spit oil as defense.",
         "image_path": "static/bird_images/Northern_Fulmar.jpg",
-        "audio_path": "static/bird_calls/Northern_Fulmar.mp3"
+        "audio_path": "static/bird_calls/Northern_Fulmar.wav"
     },
     "Gadwall": {
         "genus": "Mareca",
@@ -189,7 +189,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Medium-sized duck with gray-brown plumage.  Male has a black rump.  Found in wetlands.  Less vocal than other ducks.  Eats aquatic plants.  Widespread distribution.",
         "image_path": "static/bird_images/Gadwall.jpg",
-        "audio_path": "static/bird_calls/Gadwall.mp3"
+        "audio_path": "static/bird_calls/Gadwall.wav"
     },
     "American_Goldfinch": {
         "genus": "Spinus",
@@ -253,7 +253,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Large, deep blue songbird (males).  Females are brown.  Has a large, conical bill.  Found in brushy areas and forest edges.  Has a rich, warbling song.  Eats seeds and insects.",
         "image_path": "static/bird_images/Blue_Grosbeak.jpg",
-        "audio_path": "static/bird_calls/Blue_Grosbeak.mp3"
+        "audio_path": "static/bird_calls/Blue_Grosbeak.wav"
     },
     "Evening_Grosbeak": {
         "genus": "Coccothraustes",
@@ -333,7 +333,7 @@
         "mating_patterns": "Polygynous",
         "short_info": "Small hummingbird with a metallic green back.  Males have a bright pink head and throat.  Found in gardens and woodlands.  Known for its elaborate courtship displays.  Non-migratory.",
         "image_path": "static/bird_images/Anna_Hummingbird.jpg",
-        "audio_path": "static/bird_calls/Anna_Hummingbird.mp3"
+        "audio_path": "static/bird_calls/Anna_Hummingbird.wav"
     },
     "Ruby_throated_Hummingbird": {
         "genus": "Archilochus",
@@ -357,7 +357,7 @@
         "mating_patterns": "Polygynous",
         "short_info": "Medium-sized hummingbird with a metallic green body.  Has a violet ear patch.  Found in forests and gardens.  Fast and agile flight.  Eats nectar and insects.  Has a buzzy call.",
         "image_path": "static/bird_images/Green_Violetear.jpg",
-        "audio_path": "static/bird_calls/Green_Violetear.mp3"
+        "audio_path": "static/bird_calls/Green_Violetear.wav"
     },
     "Long_tailed_Jaeger": {
         "genus": "Stercorarius",
@@ -373,7 +373,7 @@
         "mating_patterns": "Monogamous",
         "short_info": "Large seabird with blunt central tail feathers (adults).  Breeds in the Arctic.  Migrates south for the winter.  Predator and kleptoparasite.  Strong flyer.  Variable plumage.",
         "image_path": "static/bird_images/Pomarine_Jaeger.jpg",
-        "audio_path": "static/bird_calls/Pomarine_Jaeger.mp3"
+        "audio_path": "static/bird_calls/Pomarine_Jaeger.wav"
     },
     "Blue_Jay": {
         "genus": "Cyanocitta",
